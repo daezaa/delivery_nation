@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="order">
+        <item>카드 결제</item>
+        <item>휴대폰 결제</item>
+        <item>카카오페이</item>
+        <item>PAYCO</item>
+    </string-array>
+    <string-array name="order_eng">
+        <item>Pay by Card</item>
+        <item>Pay by Phone</item>
+        <item>Kakao Pay</item>
+        <item>PAYCO</item>
+    </string-array>
+</resources>

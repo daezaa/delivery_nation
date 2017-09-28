@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jinwook.mad_assignment04.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="#303030"
+        android:gravity="center">
+
+
+        <Button
+            android:id="@+id/bt_debug"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:text="debug"
+            android:textSize="8dp"
+            android:layout_alignTop="@+id/tv_title"
+            android:layout_marginLeft="10dp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="배달의 형제"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+        <ImageButton
+            android:id="@+id/bt_lang_kor"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:background="@drawable/flag_kor"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp" />
+        <ImageButton
+            android:visibility="gone"
+            android:id="@+id/bt_lang_eng"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:background="@drawable/flag_eng"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/header"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/LL_kor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/RL_menu1_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_menu1"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/img_menu1" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/img_menu1"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:id="@+id/star_menu1_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="★★★★☆"
+                            android:textColor="#dddddd00" />
+
+                        <TextView
+                            android:id="@+id/tv_title_menu1_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/star_menu1_1"
+                            android:text="배달돼지"
+                            android:textColor="#202020"
+                            android:textSize="20dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tv_review1_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_title_menu1_1"
+                            android:text="최근리뷰 300+  최근사장님댓글 300+"
+                            android:textColor="#909090"
+                            android:textSize="10dp"
+                            android:textStyle="bold" />
+
+                        <RelativeLayout
+                            android:id="@+id/LL_pay1_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_below="@id/tv_review1_1">
+
+                            <ImageView
+                                android:id="@+id/iv_menu1_pay1_1"
+                                android:layout_width="40dp"
+                                android:layout_height="10dp"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/pay1" />
+
+                            <ImageView
+                                android:id="@+id/iv_menu1_pay1_2"
+                                android:layout_width="50dp"
+                                android:layout_height="10dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/iv_menu1_pay1_1"
+                                android:background="@drawable/pay3" />
+
+                            <ImageView
+                                android:id="@+id/iv_menu1_pay1_3"
+                                android:layout_width="40dp"
+                                android:layout_height="10dp"
+                                android:layout_toRightOf="@+id/iv_menu1_pay1_2"
+                                android:background="@drawable/pay2"
+                                android:layout_marginLeft="5dp"
+                                android:layout_centerVertical="true"/>
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_arrow1"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/nextbutton"
+                        android:text=">"
+                        android:textColor="#cccccc"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RL_menu1_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_menu1_2"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/img_menu2" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/img_menu1_2"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:id="@+id/star_menu1_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="★★☆☆☆"
+                            android:textColor="#dddddd00" />
+
+                        <TextView
+                            android:id="@+id/tv_title_menu1_2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/star_menu1_2"
+                            android:text="스까덮밥"
+                            android:textColor="#202020"
+                            android:textSize="20dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tv_review_menu1_2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_title_menu1_2"
+                            android:text="최근리뷰 21  최근사장님댓글 18"
+                            android:textColor="#909090"
+                            android:textSize="10dp"
+                            android:textStyle="bold" />
+
+                        <RelativeLayout
+                            android:id="@+id/LL_pay1_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_below="@id/tv_review_menu1_2">
+
+                            <ImageView
+                                android:id="@+id/iv_menu1_pay2"
+                                android:layout_width="40dp"
+                                android:layout_height="10dp"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/pay2" />
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="10dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/iv_menu1_pay2"
+                                android:background="@drawable/pay3" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/bt_menu1"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/nextbutton"
+                        android:text=">"
+                        android:textColor="#cccccc"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LL_eng"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/RL_menu2_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_menu2"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/img_menu3" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/img_menu2"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:id="@+id/star_menu2_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="★★★★★"
+                            android:textColor="#dddddd00" />
+
+                        <TextView
+                            android:id="@+id/tv_title_menu2_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/star_menu2_1"
+                            android:text="BUGER GOD"
+                            android:textColor="#202020"
+                            android:textSize="20dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tv_review2_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_title_menu2_1"
+                            android:text="Recent Review 300+  CEO comment 300+"
+                            android:textColor="#909090"
+                            android:textSize="10dp"
+                            android:textStyle="bold" />
+
+                        <RelativeLayout
+                            android:id="@+id/LL_pay2_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_below="@id/tv_review2_1">
+
+                            <ImageView
+                                android:id="@+id/iv_menu1_pay2_1"
+                                android:layout_width="40dp"
+                                android:layout_height="10dp"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/pay4" />
+
+                            <ImageView
+                                android:id="@+id/iv_menu1_pay2_2"
+                                android:layout_width="50dp"
+                                android:layout_height="10dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/iv_menu1_pay2_1"
+                                android:background="@drawable/pay6" />
+
+                            <ImageView
+                                android:id="@+id/iv_menu1_pay2_3"
+                                android:layout_width="40dp"
+                                android:layout_height="10dp"
+                                android:layout_toRightOf="@+id/iv_menu1_pay2_2"
+                                android:background="@drawable/pay5"
+                                android:layout_marginLeft="5dp"
+                                android:layout_centerVertical="true"/>
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_arrow2"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/nextbutton"
+                        android:text=">"
+                        android:textColor="#cccccc"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RL_menu2_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_menu2_2"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/img_menu4" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/img_menu2_2"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:id="@+id/star_menu2_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="★★★☆☆"
+                            android:textColor="#dddddd00" />
+
+                        <TextView
+                            android:id="@+id/tv_title_menu2_2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/star_menu2_2"
+                            android:text="Coffee Heaven"
+                            android:textColor="#202020"
+                            android:textSize="20dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tv_review_menu2_2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_title_menu2_2"
+                            android:text="Recent Review 255  CEO comment 150"
+                            android:textColor="#909090"
+                            android:textSize="10dp"
+                            android:textStyle="bold" />
+
+                        <RelativeLayout
+                            android:id="@+id/LL_pay2_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_below="@id/tv_review_menu2_2">
+
+                            <ImageView
+                                android:id="@+id/iv_menu2_pay2_1"
+                                android:layout_width="40dp"
+                                android:layout_height="10dp"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/pay4" />
+
+                            <ImageView
+                                android:id="@+id/iv_menu2_pay2"
+                                android:layout_marginLeft="5dp"
+                                android:layout_width="40dp"
+                                android:layout_height="10dp"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/pay5"
+                                android:layout_toRightOf="@+id/iv_menu2_pay2_1"/>
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="10dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/iv_menu2_pay2"
+                                android:background="@drawable/pay6" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/bt_menu2"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/nextbutton"
+                        android:text=">"
+                        android:textColor="#cccccc"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

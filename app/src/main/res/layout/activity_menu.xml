@@ -1,0 +1,1068 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:background="#303030"
+        android:gravity="center">
+
+
+        <Button
+            android:id="@+id/bt_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:textSize="8dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/back"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_toRightOf="@+id/bt_back"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TITLE"
+            android:textColor="#eeeeee"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageButton
+            android:id="@+id/bt_heart"
+            android:layout_width="23dp"
+            android:layout_height="20dp"
+            android:background="@drawable/heart"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"/>
+
+        <ImageButton
+            android:id="@+id/bt_heart_red"
+            android:visibility="gone"
+            android:layout_width="23dp"
+            android:layout_height="20dp"
+            android:background="@drawable/heart_red"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"/>
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/header"
+        android:layout_above="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/LL_menu1"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4">
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:orientation="vertical"
+                        android:layout_centerVertical="true">
+
+                        <TextView
+                            android:id="@+id/tv_menu1"
+                            android:layout_marginTop="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:text="TitleOfMenuOneTitleOfMenuOne"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/tv_price1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="가격: 88888888원"
+                            android:textSize="10dp"
+                            android:textColor="#000000"
+                            android:layout_marginLeft="20dp"/>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/minus1"
+                        android:layout_toLeftOf="@+id/num1"
+                        android:layout_width="15dp"
+                        android:layout_height="20dp"
+                        android:text="-"
+                        android:textSize="10dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:background="#909090"/>
+
+                    <TextView
+                        android:id="@+id/num1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#000000"
+                        android:layout_centerInParent="true"
+                        />
+
+                    <Button
+                        android:id="@+id/plus1"
+                        android:layout_toRightOf="@+id/num1"
+                        android:layout_width="15dp"
+                        android:layout_height="20dp"
+                        android:text="+"
+                        android:textSize="10dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:background="#909090"/>
+
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LL_menu2"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4">
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:orientation="vertical"
+                        android:layout_centerVertical="true">
+
+                        <TextView
+                            android:id="@+id/tv_menu2"
+                            android:layout_marginTop="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:text="TitleOfMenuOneTitleOfMenuOne"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/tv_price2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="가격: 88888888원"
+                            android:textSize="10dp"
+                            android:textColor="#000000"
+                            android:layout_marginLeft="20dp"/>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/minus2"
+                        android:layout_toLeftOf="@+id/num2"
+                        android:layout_width="15dp"
+                        android:layout_height="20dp"
+                        android:text="-"
+                        android:textSize="10dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:background="#909090"/>
+
+                    <TextView
+                        android:id="@+id/num2"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#000000"
+                        android:layout_centerInParent="true"
+                        />
+
+                    <Button
+                        android:id="@+id/plus2"
+                        android:layout_toRightOf="@+id/num2"
+                        android:layout_width="15dp"
+                        android:layout_height="20dp"
+                        android:text="+"
+                        android:textSize="10dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:background="#909090"/>
+
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LL_menu3"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4">
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:orientation="vertical"
+                        android:layout_centerVertical="true">
+
+                        <TextView
+                            android:id="@+id/tv_menu3"
+                            android:layout_marginTop="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:text="TitleOfMenuOneTitleOfMenuOne"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/tv_price3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="가격: 88888888원"
+                            android:textSize="10dp"
+                            android:textColor="#000000"
+                            android:layout_marginLeft="20dp"/>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/minus3"
+                        android:layout_toLeftOf="@+id/num3"
+                        android:layout_width="15dp"
+                        android:layout_height="20dp"
+                        android:text="-"
+                        android:textSize="10dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:background="#909090"/>
+
+                    <TextView
+                        android:id="@+id/num3"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#000000"
+                        android:layout_centerInParent="true"
+                        />
+
+                    <Button
+                        android:id="@+id/plus3"
+                        android:layout_toRightOf="@+id/num3"
+                        android:layout_width="15dp"
+                        android:layout_height="20dp"
+                        android:text="+"
+                        android:textSize="10dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:background="#909090"/>
+
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LL_menu4"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4">
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:orientation="vertical"
+                        android:layout_centerVertical="true">
+
+                        <TextView
+                            android:id="@+id/tv_menu4"
+                            android:layout_marginTop="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:text="TitleOfMenuOneTitleOfMenuOne"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/tv_price4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="가격: 88888888원"
+                            android:textSize="10dp"
+                            android:textColor="#000000"
+                            android:layout_marginLeft="20dp"/>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/minus4"
+                        android:layout_toLeftOf="@+id/num4"
+                        android:layout_width="15dp"
+                        android:layout_height="20dp"
+                        android:text="-"
+                        android:textSize="10dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:background="#909090"/>
+
+                    <TextView
+                        android:id="@+id/num4"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#000000"
+                        android:layout_centerInParent="true"
+                        />
+
+                    <Button
+                        android:id="@+id/plus4"
+                        android:layout_toRightOf="@+id/num4"
+                        android:layout_width="15dp"
+                        android:layout_height="20dp"
+                        android:text="+"
+                        android:textSize="10dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:background="#909090"/>
+
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LL_menu5"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4">
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:orientation="vertical"
+                        android:layout_centerVertical="true">
+
+                        <TextView
+                            android:id="@+id/tv_menu5"
+                            android:layout_marginTop="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:text="TitleOfMenuOneTitleOfMenuOne"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/tv_price5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="가격: 88888888원"
+                            android:textSize="10dp"
+                            android:textColor="#000000"
+                            android:layout_marginLeft="20dp"/>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/minus5"
+                        android:layout_toLeftOf="@+id/num5"
+                        android:layout_width="15dp"
+                        android:layout_height="20dp"
+                        android:text="-"
+                        android:textSize="10dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:background="#909090"/>
+
+                    <TextView
+                        android:id="@+id/num5"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#000000"
+                        android:layout_centerInParent="true"
+                        />
+
+                    <Button
+                        android:id="@+id/plus5"
+                        android:layout_toRightOf="@+id/num5"
+                        android:layout_width="15dp"
+                        android:layout_height="20dp"
+                        android:text="+"
+                        android:textSize="10dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:background="#909090"/>
+
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LL_menu6"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4">
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:orientation="vertical"
+                        android:layout_centerVertical="true">
+
+                        <TextView
+                            android:id="@+id/tv_menu6"
+                            android:layout_marginTop="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:text="TitleOfMenuOneTitleOfMenuOne"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/tv_price6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="가격: 88888888원"
+                            android:textSize="10dp"
+                            android:textColor="#000000"
+                            android:layout_marginLeft="20dp"/>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/minus6"
+                        android:layout_toLeftOf="@+id/num6"
+                        android:layout_width="15dp"
+                        android:layout_height="20dp"
+                        android:text="-"
+                        android:textSize="10dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:background="#909090"/>
+
+                    <TextView
+                        android:id="@+id/num6"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#000000"
+                        android:layout_centerInParent="true"
+                        />
+
+                    <Button
+                        android:id="@+id/plus6"
+                        android:layout_toRightOf="@+id/num6"
+                        android:layout_width="15dp"
+                        android:layout_height="20dp"
+                        android:text="+"
+                        android:textSize="10dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:background="#909090"/>
+
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LL_menu7"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4">
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:orientation="vertical"
+                        android:layout_centerVertical="true">
+
+                        <TextView
+                            android:id="@+id/tv_menu7"
+                            android:layout_marginTop="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:text="TitleOfMenuOneTitleOfMenuOne"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/tv_price7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="가격: 88888888원"
+                            android:textSize="10dp"
+                            android:textColor="#000000"
+                            android:layout_marginLeft="20dp"/>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/minus7"
+                        android:layout_toLeftOf="@+id/num7"
+                        android:layout_width="15dp"
+                        android:layout_height="20dp"
+                        android:text="-"
+                        android:textSize="10dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:background="#909090"/>
+
+                    <TextView
+                        android:id="@+id/num7"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#000000"
+                        android:layout_centerInParent="true"
+                        />
+
+                    <Button
+                        android:id="@+id/plus7"
+                        android:layout_toRightOf="@+id/num7"
+                        android:layout_width="15dp"
+                        android:layout_height="20dp"
+                        android:text="+"
+                        android:textSize="10dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:background="#909090"/>
+
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LL_menu8"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4">
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:orientation="vertical"
+                        android:layout_centerVertical="true">
+
+                        <TextView
+                            android:id="@+id/tv_menu8"
+                            android:layout_marginTop="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:text="TitleOfMenuOneTitleOfMenuOne"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/tv_price8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="가격: 88888888원"
+                            android:textSize="10dp"
+                            android:textColor="#000000"
+                            android:layout_marginLeft="20dp"/>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/minus8"
+                        android:layout_toLeftOf="@+id/num8"
+                        android:layout_width="15dp"
+                        android:layout_height="20dp"
+                        android:text="-"
+                        android:textSize="10dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:background="#909090"/>
+
+                    <TextView
+                        android:id="@+id/num8"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#000000"
+                        android:layout_centerInParent="true"
+                        />
+
+                    <Button
+                        android:id="@+id/plus8"
+                        android:layout_toRightOf="@+id/num8"
+                        android:layout_width="15dp"
+                        android:layout_height="20dp"
+                        android:text="+"
+                        android:textSize="10dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:background="#909090"/>
+
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LL_menu9"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4">
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:orientation="vertical"
+                        android:layout_centerVertical="true">
+
+                        <TextView
+                            android:id="@+id/tv_menu9"
+                            android:layout_marginTop="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:text="TitleOfMenuOneTitleOfMenuOne"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/tv_price9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="가격: 88888888원"
+                            android:textSize="10dp"
+                            android:textColor="#000000"
+                            android:layout_marginLeft="20dp"/>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/minus9"
+                        android:layout_toLeftOf="@+id/num9"
+                        android:layout_width="15dp"
+                        android:layout_height="20dp"
+                        android:text="-"
+                        android:textSize="10dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:background="#909090"/>
+
+                    <TextView
+                        android:id="@+id/num9"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#000000"
+                        android:layout_centerInParent="true"
+                        />
+
+                    <Button
+                        android:id="@+id/plus9"
+                        android:layout_toRightOf="@+id/num9"
+                        android:layout_width="15dp"
+                        android:layout_height="20dp"
+                        android:text="+"
+                        android:textSize="10dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:background="#909090"/>
+
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LL_menu10"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4">
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:orientation="vertical"
+                        android:layout_centerVertical="true">
+
+                        <TextView
+                            android:id="@+id/tv_menu10"
+                            android:layout_marginTop="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:text="TitleOfMenuOneTitleOfMenuOne"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/tv_price10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="가격: 88888888원"
+                            android:textSize="10dp"
+                            android:textColor="#000000"
+                            android:layout_marginLeft="20dp"/>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/minus10"
+                        android:layout_toLeftOf="@+id/num10"
+                        android:layout_width="15dp"
+                        android:layout_height="20dp"
+                        android:text="-"
+                        android:textSize="10dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:background="#909090"/>
+
+                    <TextView
+                        android:id="@+id/num10"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#000000"
+                        android:layout_centerInParent="true"
+                        />
+
+                    <Button
+                        android:id="@+id/plus10"
+                        android:layout_toRightOf="@+id/num10"
+                        android:layout_width="15dp"
+                        android:layout_height="20dp"
+                        android:text="+"
+                        android:textSize="10dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:background="#909090"/>
+
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LL_menu11"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4">
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:orientation="vertical"
+                        android:layout_centerVertical="true">
+
+                        <TextView
+                            android:id="@+id/tv_menu11"
+                            android:layout_marginTop="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:text="TitleOfMenuOneTitleOfMenuOne"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/tv_price11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="가격: 88888888원"
+                            android:textSize="10dp"
+                            android:textColor="#000000"
+                            android:layout_marginLeft="20dp"/>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/minus11"
+                        android:layout_toLeftOf="@+id/num11"
+                        android:layout_width="15dp"
+                        android:layout_height="20dp"
+                        android:text="-"
+                        android:textSize="10dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:background="#909090"/>
+
+                    <TextView
+                        android:id="@+id/num11"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#000000"
+                        android:layout_centerInParent="true"
+                        />
+
+                    <Button
+                        android:id="@+id/plus11"
+                        android:layout_toRightOf="@+id/num11"
+                        android:layout_width="15dp"
+                        android:layout_height="20dp"
+                        android:text="+"
+                        android:textSize="10dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:background="#909090"/>
+
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="#303030"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_calling"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5"
+            android:background="#000000"
+            android:text="전화주문"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/bt_shopping"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2.5"
+            android:text="장바구니"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:background="#ff3d3c"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
